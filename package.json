@@ -11,6 +11,7 @@
   "type": "commonjs",
   "dependencies": {
     "bluebird": "^3.7.2",
+    "cli-table3": "^0.6.1",
     "crypto": "^1.0.1",
     "inquirer": "^8.2.2",
     "random-number-csprng": "^1.0.2"

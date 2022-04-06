@@ -2,7 +2,7 @@ const inquirer = require('inquirer')
 
 async function userChoice(arr){
 let tempArr = arr.slice()
-tempArr.push('help(temporaly not worked)')
+tempArr.push('help')
 tempArr.push('exit')
 
     const questions = [
@@ -15,8 +15,8 @@ tempArr.push('exit')
 ]
 
 await inquirer.prompt(questions).then((answers)=> {
-    return a = answers.name;})
-    return a;
+    return choice = answers.name;})
+    return choice;
 }
 
 module.exports = userChoice

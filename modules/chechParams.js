@@ -1,5 +1,6 @@
 function checkParams(moves) {
     let j=0;
+    
     if (moves.length < 3) {
         console.log('Error!\nNeed 3 or more parameters!')
         j++;
@@ -15,8 +16,8 @@ function checkParams(moves) {
     moves.forEach((elem) => {
         if (moves.includes(elem, moves.indexOf(elem) + 1) && i === 0) {
             console.log('Error\nThere are repetitions of parameters');
-            j++
             return i++
+            j++
         }
     })
     return j;
