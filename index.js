@@ -17,9 +17,15 @@ async function main() {
             return myChoice = value;
         })
         
-        console.log(`Computer Move: ${iiChoice}`);
-        compare(moves, myChoice, iiChoice)
-        console.log(`HMAC KEY: ${hashKey}`);
+        
+        if(myChoice!=='help'&& myChoice!=='exit'){
+            compare(moves, myChoice, iiChoice)
+            console.log(`Computer Move: ${iiChoice}`);
+            console.log(`HMAC KEY: ${hashKey}\n\nNew Game:`);
+        } else if(myChoice === 'exit'){
+            process.exit()
+        }
     }
+    main()
 }
 main()
