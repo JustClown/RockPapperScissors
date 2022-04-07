@@ -11,6 +11,8 @@ async function userChoice(arr){
         name: 'name',
         message: 'Your choice: ',
         choices: options,
+        pageSize: 15,
+        loop: false
     }
 ]
 
