@@ -1,10 +1,10 @@
 function compare(moves, userChoice, compChoice) {
-    const movesHalf = (moves.length-1)/2
+    const movesHalf = (moves.length-1)/2;
 
     function move() {
         if (moves.indexOf(userChoice)+movesHalf !== moves.length-1){
-            let elem = moves.shift()
-            moves.push(elem)
+            let elem = moves.shift();
+            moves.push(elem);
             move();
         }
     }
@@ -14,10 +14,10 @@ function compare(moves, userChoice, compChoice) {
     if(moves.indexOf(userChoice)>moves.indexOf(compChoice)){
         console.log('YouWin');
     } else if(moves.indexOf(userChoice)<moves.indexOf(compChoice)) {
-        console.log('You Lose')
+        console.log('You Lose');
     } else {
-        console.log('Stack');
+        console.log('Draw');
     }
 }
 
-module.exports = compare
+module.exports = compare;

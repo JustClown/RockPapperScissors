@@ -1,22 +1,22 @@
-const inquirer = require('inquirer')
+const inquirer = require('inquirer');
 
 async function userChoice(arr){
-let tempArr = arr.slice()
-tempArr.push('help')
-tempArr.push('exit')
+    let options = arr.slice();
+    options.push('help');
+    options.push('exit');
 
     const questions = [
         {
         type: 'list',
         name: 'name',
         message: 'Your choice: ',
-        choices: tempArr,
+        choices: options,
     }
 ]
 
 await inquirer.prompt(questions).then((answers)=> {
-    return choice = answers.name;})
+    return choice = answers.name;});
     return choice;
 }
 
-module.exports = userChoice
+module.exports = userChoice;

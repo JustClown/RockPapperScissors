@@ -1,8 +1,8 @@
 const {randomBytes} = require('crypto');
 
 function hashKeyGen(bytes) {
-    let buf = randomBytes(bytes).toString('hex')
-    return buf
+    let buf = randomBytes(bytes).toString('hex');
+    return buf;
 }
 
-module.exports = hashKeyGen
+module.exports = hashKeyGen;
