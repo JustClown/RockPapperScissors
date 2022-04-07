@@ -32,7 +32,7 @@ async function main() {
         } else if(myChoice==='help') {
             helpTable(moves);
         }
-    }
-    main();
+        main();
+    }  
 }
 main();
